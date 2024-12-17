@@ -1,0 +1,16 @@
+type ComputerDTO {
+    proc: String
+    ram: Int
+    hardDrive: Int
+    price: Float
+}
+
+type Query {
+    getComputerByProc(proc: String!): [ComputerDTO]
+}
+
+type Mutation {
+    saveComputer(proc: String!, ram: Int!, hardDrive: Int!, price: Float!): ComputerDTO
+}
+
+
